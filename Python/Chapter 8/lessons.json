@@ -428,7 +428,7 @@
     },
     {
         "type": "mcq",
-        "conம": {
+        "con": {
             "ques": "What does '123'.zfill(6) return?",
             "op": [
                 "000123",
