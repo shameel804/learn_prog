@@ -1,0 +1,81 @@
+[
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Python Numbers"},
+            {"para": "There are three numeric types in Python:"},
+            {"list": [
+                "int",
+                "float",
+                "complex"
+            ]},
+            {"snippet": [
+                "python",
+                "x = 1    # int\ny = 2.8  # float\nz = 1j   # complex"
+            ]},
+            {"para": "To verify the type of any object in Python, use the ```type()``` function:"},
+            {"snippet": [
+                "python",
+                "print(type(x))\nprint(type(y))\nprint(type(z))"
+            ]}
+        ]
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Int"},
+            {"para": "Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length."},
+            {"para": "Integers are written without decimals."},
+            {"snippet": [
+                "python",
+                "x = 1\ny = 35656222554887711\nz = -3255522"
+            ]}
+        ]
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Float"},
+            {"para": "Float, or \"floating point number\" is a number, positive or negative, containing one or more decimals."},
+            {"para": "Float can also be scientific numbers with an \"e\" to indicate the power of 10."},
+            {"snippet": [
+                "python",
+                "x = 1.10\ny = 1.0\nz = -35.59\nw = 35e3\nv = 12E4\nu = -87.7e100"
+            ]}
+        ]
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Complex"},
+            {"para": "Complex numbers are written with a \"j\" as the imaginary part."},
+            {"snippet": [
+                "python",
+                "x = 3+5j\ny = 5j\nz = -5j"
+            ]}
+        ]
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Type Conversion"},
+            {"para": "You can convert from one type to another with the int(), float(), and complex() methods."},
+            {"snippet": [
+                "python",
+                "x = 1    # int\ny = 2.8  # float\nz = 1j   # complex\n\n#convert from int to float:\na = float(x)\n\n#convert from float to int:\nb = int(y)\n\n#convert from int to complex:\nc = complex(x)"
+            ]},
+            {"note": "Note: You cannot convert complex numbers into another number type."}
+        ]
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Random Number"},
+            {"para": "Python does not have a random() function to make a random number, but Python has a built-in module called random that can be used to make random numbers:"},
+            {"snippet": [
+                "python",
+                "import random\nprint(random.randrange(1, 10))"
+            ]}
+        ]
+    }
+]

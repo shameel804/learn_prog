@@ -1,0 +1,41 @@
+[
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Built-in Data Types"},
+            {"para": "In programming, data type is an important concept."},
+            {"para": "Variables can store data of different types, and different types can do different things."},
+            {"para": "Python has the following data types built-in by default, in these categories:"},
+            {"list": [
+                "Text Type:\tstr",
+                "Numeric Types:\tint, float, complex",
+                "Sequence Types:\tlist, tuple, range",
+                "Mapping Type:\tdict",
+                "Set Types:\tset, frozenset",
+                "Boolean Type:\tbool",
+                "Binary Types:\tbytes, bytearray, memoryview"
+            ]},
+            {"para": "You can get the data type of any object by using the ```type()``` function:"},
+            {"snippet": [
+                "python",
+                "x = 5\nprint(type(x))"
+            ]}
+        ]
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Setting the Data Type"},
+            {"para": "In Python, the data type is set when you assign a value to a variable:"},
+            {"snippet": [
+                "python",
+                "x = 'Hello, World!'\n# x will be a str"
+            ]},
+            {"para": "You can also specify a variable type using the following functions:"},
+            {"snippet": [
+                "python",
+                "x = str('Hello, World!')\ny = int(20)\nz = float(20.5)"
+            ]}
+        ]
+    }
+]

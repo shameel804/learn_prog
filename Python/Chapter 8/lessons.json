@@ -1,0 +1,441 @@
+[
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Introduction to Python Strings"},
+            {"para": "In Python, a string is a sequence of characters enclosed within single quotes (''), double quotes (\"\"), or triple quotes (''' or \"\"\"). Strings are immutable, meaning they cannot be changed once created."},
+            {"para": "Strings are one of the most commonly used data types in Python and support a variety of operations like slicing, concatenation, and formatting."},
+            {"para": "Triple quotes are particularly useful for multi-line strings or strings containing both single and double quotes."},
+            {"list": [
+                "Strings can store letters, numbers, and special characters.",
+                "Example: 'Hello', \"World\", '''Python'''",
+                "Strings are zero-indexed, meaning the first character is at index 0."
+            ]},
+            {"snippet": [
+                "python",
+                "name = 'Python'\nmulti_line = '''This is\na multi-line\nstring'''\nprint(name)\nprint(multi_line)"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What is true about Python strings?",
+            "op": [
+                "They are immutable",
+                "They are mutable",
+                "They cannot store numbers",
+                "They must always use single quotes"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "String Length and Basic Operations"},
+            {"para": "You can find the length of a string using the len() function, which returns the number of characters, including spaces and punctuation."},
+            {"para": "Basic operations like checking if a substring exists in a string can be done with the 'in' operator."},
+            {"list": [
+                "len('Python') returns 6.",
+                "'th' in 'Python' returns True.",
+                "The 'not in' operator checks for absence."
+            ]},
+            {"snippet": [
+                "python",
+                "text = 'Python Programming'\nprint(len(text))  # Output: 18\nprint('Py' in text)  # Output: True\nprint('Java' not in text)  # Output: True"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What does len('Hello') return?",
+            "op": [
+                "5",
+                "4",
+                "6",
+                "Error"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "String Slicing"},
+            {"para": "String slicing allows you to extract a portion of a string using the syntax string[start:stop:step]. The 'start' is inclusive, but 'stop' is exclusive."},
+            {"para": "If 'start' or 'stop' is omitted, Python uses default values (0 for start, length of string for stop). The 'step' determines the increment between characters."},
+            {"para": "Negative indices can be used to count from the end of the string, and a negative step reverses the direction."},
+            {"list": [
+                "string[1:4] extracts characters from index 1 to 3.",
+                "string[-1] gets the last character.",
+                "string[::-1] reverses the string."
+            ]},
+            {"snippet": [
+                "python",
+                "text = 'Python'\nprint(text[0:2])  # Output: Py\nprint(text[-4:-1])  # Output: tho\nprint(text[::2])  # Output: Pto\nprint(text[::-1])  # Output: nohtyP"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What will text[1:4] return for the string text = 'Python'?",
+            "op": [
+                "yth",
+                "Pyt",
+                "tho",
+                "ython"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Advanced String Slicing"},
+            {"para": "Slicing can be used creatively to manipulate strings in ways like skipping characters or extracting every nth character."},
+            {"para": "Using a step value greater than 1 skips characters, while a negative step can be combined with specific start and stop indices for complex extractions."},
+            {"list": [
+                "text[1::2] skips every other character starting from index 1.",
+                "text[-1:-4:-1] extracts characters in reverse from the end.",
+                "Omitting start and stop with a step still works."
+            ]},
+            {"snippet": [
+                "python",
+                "text = 'Python3'\nprint(text[1::2])  # Output: yhn\nprint(text[-1:-5:-1])  # Output: 3noh\nprint(text[::3])  # Output: Ptn"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What does 'Python'[::2] return?",
+            "op": [
+                "Pto",
+                "yth",
+                "Pyt",
+                "nohtyP"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "String Concatenation"},
+            {"para": "Concatenation is the process of joining two or more strings into one. In Python, this is done using the '+' operator or by using the 'join()' method."},
+            {"para": "The '+' operator is straightforward, while 'join()' is more efficient for combining multiple strings from a list. Note that 'join()' requires an iterable."},
+            {"para": "You can also use the '*' operator to repeat a string multiple times."},
+            {"list": [
+                "'Hello' + 'World' results in 'HelloWorld'.",
+                "' '.join(['Hello', 'World']) results in 'Hello World'.",
+                "'Hi' * 3 results in 'HiHiHi'."
+            ]},
+            {"snippet": [
+                "python",
+                "str1 = 'Hello'\nstr2 = 'World'\nresult = str1 + ' ' + str2\nprint(result)  # Output: Hello World\nprint(''.join([str1, str2]))  # Output: HelloWorld\nprint(str1 * 2)  # Output: HelloHello"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What is the output of 'Py' + 'thon'?",
+            "op": [
+                "Python",
+                "Py thon",
+                "Py+thon",
+                "Error"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Modifying Strings"},
+            {"para": "Since strings are immutable, you cannot modify them directly. However, you can create a new string with the desired changes using operations like concatenation or string methods."},
+            {"para": "Common methods include replace(), upper(), lower(), and strip() to achieve modifications. These methods return a new string rather than altering the original."},
+            {"list": [
+                "replace('old', 'new') replaces occurrences of 'old' with 'new'.",
+                "upper() converts the string to uppercase.",
+                "lower() converts the string to lowercase."
+            ]},
+            {"snippet": [
+                "python",
+                "text = 'Hello World'\nnew_text = text.replace('World', 'Python')\nprint(new_text)  # Output: Hello Python\nprint(text.upper())  # Output: HELLO WORLD\nprint(text.lower())  # Output: hello world"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What will 'python'.upper() return?",
+            "op": [
+                "PYTHON",
+                "python",
+                "Python",
+                "Error"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "More String Modification Techniques"},
+            {"para": "Beyond basic methods, Python offers additional ways to modify strings, such as using slicing with concatenation or leveraging methods like capitalize() and title()."},
+            {"para": "These techniques are useful for formatting text or preparing it for display."},
+            {"list": [
+                "capitalize() makes the first character uppercase and the rest lowercase.",
+                "title() capitalizes the first letter of each word.",
+                "Slicing + concatenation can replace parts of a string."
+            ]},
+            {"snippet": [
+                "python",
+                "text = 'hello world'\nprint(text.capitalize())  # Output: Hello world\nprint(text.title())  # Output: Hello World\nnew_text = text[:5] + ' Python'\nprint(new_text)  # Output: hello Python"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What does 'hello world'.title() return?",
+            "op": [
+                "Hello World",
+                "hello world",
+                "Hello world",
+                "HELLO WORLD"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Format Strings with % Operator"},
+            {"para": "The % operator is an older way to format strings in Python, borrowed from C-style formatting. It uses placeholders like %s for strings, %d for integers, and %f for floats."},
+            {"para": "While less common today, it’s still useful in legacy code or simple scripts."},
+            {"list": [
+                "'Name: %s' % 'Alice' formats a string.",
+                "'Age: %d' % 25 formats an integer.",
+                "Multiple values can be passed as a tuple: '%s is %d' % ('Alice', 25)"
+            ]},
+            {"snippet": [
+                "python",
+                "name = 'Alice'\nage = 25\nprint('Name: %s, Age: %d' % (name, age))  # Output: Name: Alice, Age: 25"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What is the output of 'Value: %d' % 42?",
+            "op": [
+                "Value: 42",
+                "Value: %d",
+                "42",
+                "Error"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Format Strings with .format()"},
+            {"para": "The .format() method, introduced in Python 2.6, provides a more flexible way to format strings. It uses curly braces {} as placeholders."},
+            {"para": "You can specify positions or names for the placeholders, making it more readable and reusable."},
+            {"list": [
+                "'Hello {}'.format('World') inserts 'World'.",
+                "'{0} {1}'.format('Hello', 'World') uses positional arguments.",
+                "'{name} is {age}'.format(name='Alice', age=25) uses named arguments."
+            ]},
+            {"snippet": [
+                "python",
+                "print('Hello {}'.format('World'))  # Output: Hello World\nprint('{0} {1}'.format('Python', 'Rocks'))  # Output: Python Rocks\nprint('{n} is {a}'.format(n='Alice', a=25))  # Output: Alice is 25"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What does '{1} {0}'.format('World', 'Hello') return?",
+            "op": [
+                "Hello World",
+                "World Hello",
+                "Error",
+                "{1} {0}"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Format Strings with F-Strings"},
+            {"para": "F-strings, introduced in Python 3.6, are the most modern and concise way to format strings. They use the f prefix and embed expressions directly in curly braces."},
+            {"para": "F-strings are faster and more readable than other methods, and they can include Python expressions inside the braces."},
+            {"list": [
+                "f'Hello {name}' inserts the value of 'name'.",
+                "f'{x + 1}' evaluates the expression inside.",
+                "No additional method call is needed."
+            ]},
+            {"snippet": [
+                "python",
+                "name = 'Alice'\nage = 25\nprint(f'{name} is {age} years old')  # Output: Alice is 25 years old\nx = 5\nprint(f'Next: {x + 1}')  # Output: Next: 6"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "Which of these is a valid f-string?",
+            "op": [
+                "f'Hello {name}'",
+                "'Hello {name}'",
+                "f'Hello name'",
+                "%'Hello {name}'"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Escape Characters"},
+            {"para": "Escape characters are special characters preceded by a backslash (\\) that allow you to include characters that are otherwise difficult to type, like quotes or newlines."},
+            {"para": "They’re essential for formatting output or including special characters in strings."},
+            {"list": [
+                "\\n: New line",
+                "\\t: Tab",
+                "\\\": Double quote",
+                "\\\\: Backslash"
+            ]},
+            {"snippet": [
+                "python",
+                "text = 'Hello\\nWorld'\nprint(text)  # Output: Hello\nWorld\nprint('She said, \\\"Hi\\\"')  # Output: She said, \"Hi\"\nprint('Path: C:\\\\Users')  # Output: Path: C:\\Users"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What does \\n do in a Python string?",
+            "op": [
+                "Inserts a newline",
+                "Inserts a tab",
+                "Escapes a quote",
+                "Inserts a backslash"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Raw Strings and Escape Characters"},
+            {"para": "Python supports raw strings, which treat backslashes as literal characters rather than escape sequences. Use the 'r' prefix to create a raw string."},
+            {"para": "This is particularly useful for file paths or regular expressions where backslashes are common."},
+            {"list": [
+                "r'Hello\\nWorld' treats \\n as literal characters.",
+                "Normal string 'Hello\\nWorld' interprets \\n as a newline.",
+                "Raw strings don’t need extra escapes for backslashes."
+            ]},
+            {"snippet": [
+                "python",
+                "normal = 'Hello\\nWorld'\nraw = r'Hello\\nWorld'\nprint(normal)  # Output: Hello\nWorld\nprint(raw)  # Output: Hello\\nWorld"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What does print(r'Hi\\nThere') output?",
+            "op": [
+                "Hi\\nThere",
+                "Hi\nThere",
+                "HiThere",
+                "Error"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "String Methods: Searching and Testing"},
+            {"para": "Python provides a rich set of built-in string methods to manipulate strings. Some methods are designed for searching or testing string contents."},
+            {"para": "These methods return new strings or useful information like indices or boolean values."},
+            {"list": [
+                "find(substring) returns the index of the first occurrence or -1 if not found.",
+                "startswith(prefix) checks if the string starts with a prefix.",
+                "isalpha() checks if all characters are letters."
+            ]},
+            {"snippet": [
+                "python",
+                "text = 'Python Programming'\nprint(text.find('Prog'))  # Output: 7\nprint(text.startswith('Py'))  # Output: True\nprint('abc'.isalpha())  # Output: True\nprint('abc123'.isalpha())  # Output: False"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What does 'Python'.find('th') return?",
+            "op": [
+                "2",
+                "1",
+                "-1",
+                "3"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "String Methods: Splitting and Joining"},
+            {"para": "Methods like split() and join() are powerful for breaking strings apart or combining them back together."},
+            {"para": "split() breaks a string into a list based on a delimiter, while join() combines a list of strings into one string with a separator."},
+            {"list": [
+                "split() with no argument splits on whitespace.",
+                "split(',') splits on commas.",
+                "'-'.join(['a', 'b', 'c']) joins with a hyphen."
+            ]},
+            {"snippet": [
+                "python",
+                "text = 'Python is fun'\nprint(text.split())  # Output: ['Python', 'is', 'fun']\nprint('a,b,c'.split(','))  # Output: ['a', 'b', 'c']\nwords = ['Hello', 'World']\nprint(' '.join(words))  # Output: Hello World"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What does 'Hello World'.split() return?",
+            "op": [
+                "['Hello', 'World']",
+                "'HelloWorld'",
+                "['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']",
+                "Error"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "String Methods: Trimming and Padding"},
+            {"para": "String methods like strip(), lstrip(), rstrip(), and zfill() help clean up or adjust string formatting."},
+            {"para": "These are useful for removing unwanted characters or ensuring a string meets a specific length."},
+            {"list": [
+                "strip() removes leading and trailing whitespace.",
+                "lstrip() removes only leading characters.",
+                "zfill(width) pads a numeric string with zeros."
+            ]},
+            {"snippet": [
+                "python",
+                "text = '   Hello   '\nprint(text.strip())  # Output: Hello\nprint(text.lstrip())  # Output: Hello   \nnum = '42'\nprint(num.zfill(5))  # Output: 00042"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "conம": {
+            "ques": "What does '123'.zfill(6) return?",
+            "op": [
+                "000123",
+                "123000",
+                "123",
+                "Error"
+            ]
+        }
+    }
+]

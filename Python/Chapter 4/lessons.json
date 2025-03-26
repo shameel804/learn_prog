@@ -86,5 +86,114 @@
                 "a = 4\nA = 'Sally'\n#A will not overwrite a"
             ]}
         ]
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Variable Names"},
+            {"para": "A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume)."},
+            {"para": "Rules for Python variables:"},
+            {"list": [
+                "A variable name must start with a letter or the underscore character",
+                "A variable name cannot start with a number",
+                "A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )",
+                "Variable names are case-sensitive (age, Age and AGE are three different variables)"
+            ]},
+            {"para": "Remember that variable names are case-sensitive."},
+            {"para": "Legal variable names:"},
+            {"snippet": [
+                "python",
+                "myvar = 'John'\nmy_var = 'John'\n_my_var = 'John'\nmyVar = 'John'\nMYVAR = 'John'\nmyvar2 = 'John'"
+            ]},
+            {"para": "Illegal variable names:"},
+            {"snippet": [
+                "python",
+                "2myvar = 'John'\nmy-var = 'John'\nmy var = 'John'"
+            ]},
+            {"note": "Remember that variable names are case-sensitive."}
+        ]
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Multi Words Variable Names"},
+            {"para": "Variable names with more than one word can be difficult to read."},
+            {"para": "There are several techniques you can use to make them more readable:"},
+            {"list": [
+                "Camel Case: Each word, except the first, starts with a capital letter: myVariableName",
+                "Pascal Case: Each word starts with a capital letter: MyVariableName",
+                "Snake Case: Each word is separated by an underscore character: my_variable_name"
+            ]},
+            {"para": "Choose one of the naming conventions and stick with it."},
+            {"para": "Camel Case:"},
+            {"snippet": [
+                "python",
+                "myVariableName = 'John'"
+            ]},
+            {"para": "Pascal Case:"},
+            {"snippet": [
+                "python",
+                "MyVariableName = 'John'"
+            ]},
+            {"para": "Snake Case:"},
+            {"snippet": [
+                "python",
+                "my_variable_name = 'John'"
+            ]}
+        ]
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Assign Multiple Values"},
+            {"para": "Python allows you to assign values to multiple variables in one line:"},
+            {"snippet": [
+                "python",
+                "x, y, z = 'Orange', 'Banana', 'Cherry'"
+            ]},
+            {"'note": "Make sure the number of variables matches the number of values, or else you will get an error."},
+            {"para": "And you can assign the same value to multiple variables in one line:"},
+            {"snippet": [
+                "python",
+                "x = y = z = 'Orange'"
+            ]},
+            {"para": "Unpack a collection:"},
+            {"snippet": [
+                "python",
+                "fruits = ['apple', 'banana', 'cherry']\nx, y, z = fruits"
+            ]},
+            {"para": "Output the variables:"},
+            {"snippet": [
+                "python",
+                "print(x)\nprint(y)\nprint(z)"
+            ]}
+        ]
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Output Variables"},
+            {"para": "The Python print statement is often used to output variables."},
+            {"para": "To combine both text and a variable, Python uses the ```+``` character:"},
+            {"snippet": [
+                "python",
+                "x = 'awesome'\nprint('Python is ' + x)"
+            ]},
+            {"para": "You can also use the ```+``` character to add a variable to another variable:"},
+            {"snippet": [
+                "python",
+                "x = 'Python is '\ny = 'awesome'\nz =  x + y\nprint(z)"
+            ]},
+            {"para": "For numbers, the ```+``` character works as a mathematical operator:"},
+            {"snippet": [
+                "python",
+                "x = 5\ny = 10\nprint(x + y)"
+            ]},
+            {"para": "If you try to combine a string and a number, Python will give you an error:"},
+            {"snippet": [
+                "python",
+                "x = 5\ny = 'John'\nprint(x + y)"
+            ]}
+        ]
     }
 ]
