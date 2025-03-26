@@ -1,0 +1,59 @@
+[
+    {
+        "type": "input",
+        "con": {
+            "ques": "x = 5\ny=5\n____+____",
+            "ans": ["x", "y"]
+        }
+    },
+    {
+        "type": "fill",
+        "con": {
+            "ques": "The ____ revolves around the ____.",
+            "op": [
+                "Earth",
+                "Sun",
+                "Moon",
+                "Mars",
+                "Jupiter"
+            ],
+            "ans": ["Earth", "Sun"]
+        }
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What does Physics study?",
+            "op": [
+                "The rules and principles governing the universe",
+                "The behavior of animals",
+                "The functioning of the human body",
+                "The history of ancient civilizations"
+            ]
+        }
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "How often do we use physics in our daily lives?",
+            "op": [
+                "Almost every day without realizing it",
+                "Only during science experiments",
+                "Rarely, in special situations",
+                "Only when using electronic devices"
+            ]
+        }
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "Which branch of physics studies the motion of objects?",
+            "op": [
+                "Mechanics",
+                "Optics",
+                "Electromagnetism",
+                "Acoustics"
+            ]
+        }
+    }
+]
