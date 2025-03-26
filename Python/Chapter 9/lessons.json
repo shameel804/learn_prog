@@ -1,0 +1,157 @@
+[
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Introduction to Python Boolean"},
+            {"para": "In Python, the Boolean data type is a built-in data type that represents two values: True and False. These values are used to evaluate conditions and control the flow of a program."},
+            {"para": "Booleans are a subtype of integers, where True is equivalent to 1 and False is equivalent to 0. They are commonly used in conditional statements, loops, and logical operations."},
+            {"list": [
+                "True represents a condition that is satisfied.",
+                "False represents a condition that is not satisfied.",
+                "Boolean values are case-sensitive: True and False must be capitalized."
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What are the two possible values of a Boolean in Python?",
+            "op": [
+                "True and False",
+                "true and false",
+                "1 and 2",
+                "Yes and No"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Boolean Operations"},
+            {"para": "Python supports three main Boolean operations: and, or, and not. These operators are used to combine or modify Boolean values."},
+            {"list": [
+                "and: Returns True if both operands are True, otherwise False.",
+                "or: Returns True if at least one operand is True, otherwise False.",
+                "not: Returns the opposite of the operand (True becomes False, False becomes True)."
+            ]},
+            {"snippet": [
+                "python",
+                "a = True\nb = False\nprint(a and b)  # False\nprint(a or b)   # True\nprint(not a)    # False"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What is the result of the expression 'True and False' in Python?",
+            "op": [
+                "False",
+                "True",
+                "None",
+                "Error"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Comparison Operators and Booleans"},
+            {"para": "Comparison operators in Python return Boolean values. These operators compare two values and evaluate to either True or False."},
+            {"list": [
+                "== (equal to)",
+                "!= (not equal to)",
+                "> (greater than)",
+                "< (less than)",
+                ">= (greater than or equal to)",
+                "<= (less than or equal to)"
+            ]},
+            {"snippet": [
+                "python",
+                "x = 5\ny = 10\nprint(x == y)  # False\nprint(x < y)   # True\nprint(x != y)  # True"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What does the expression '5 > 3' evaluate to in Python?",
+            "op": [
+                "True",
+                "False",
+                "5",
+                "None"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Boolean Conversion with bool()"},
+            {"para": "The bool() function in Python converts a value into a Boolean. Most values are considered True, except for a few that are considered False."},
+            {"para": "Values that evaluate to False include: 0, None, empty strings (''), empty lists ([]), empty tuples (()), empty dictionaries ({}), and the False value itself."},
+            {"snippet": [
+                "python",
+                "print(bool(1))      # True\nprint(bool(0))      # False\nprint(bool(''))     # False\nprint(bool('hello')) # True"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What does bool('') evaluate to in Python?",
+            "op": [
+                "False",
+                "True",
+                "None",
+                "Error"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Short-Circuit Evaluation"},
+            {"para": "Python uses short-circuit evaluation with Boolean operators. This means it stops evaluating an expression as soon as the result is determined."},
+            {"para": "For 'and', if the first operand is False, Python doesn’t evaluate the second operand. For 'or', if the first operand is True, the second operand is skipped."},
+            {"snippet": [
+                "python",
+                "a = False\nb = True\nresult = a and b  # b is not evaluated\nprint(result)     # False"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "In the expression 'False or True', is the second operand evaluated?",
+            "op": [
+                "Yes",
+                "No",
+                "Sometimes",
+                "Error"
+            ]
+        }
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Boolean in Conditional Statements"},
+            {"para": "Booleans are fundamental in controlling the flow of a program using if, elif, and else statements. The code block executes based on whether the condition evaluates to True or False."},
+            {"snippet": [
+                "python",
+                "x = 10\nif x > 0:\n    print('Positive')  # This will run\nelse:\n    print('Negative or Zero')"
+            ]}
+        ]
+    },
+    {
+        "type": "mcq",
+        "con": {
+            "ques": "What will be printed by the code: if 5 < 3: print('Yes') else: print('No')?",
+            "op": [
+                "No",
+                "Yes",
+                "Nothing",
+                "Error"
+            ]
+        }
+    }
+]
