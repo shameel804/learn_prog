@@ -1,0 +1,57 @@
+[
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Python Comments"},
+            {"para": "Comments can be used to explain Python code."},
+            {"para": "Comments can be used to make the code more readable."},
+            {"para": "Comments can be used to prevent execution when testing code."},
+            {"para": "Comments start with a #, and Python will ignore them:"}
+        ]
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Creating a comment"},
+            {"snippet": [
+                "python",
+                "#This is a comment"
+            ]},
+            {"para": "Comments can be placed at the end of a line, and Python will ignore the rest of the line:"},
+            {"snippet": [
+                "python",
+                "print('Hello, World!') #This is a comment"
+            ]},
+            {"para": "Comments do not have to be text to explain the code, it can also be used to prevent Python from executing code:"},
+            {"snippet": [
+                "python",
+                "#print('Hello, World!')"
+            ]}
+        ]
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Multiline Comments"},
+            {"para": "Python does not really have a syntax for multiline comments."},
+            {"para": "To add a multiline comment you could insert a # for each line:"},
+            {"snippet": [
+                "python",
+                "#This is a comment",
+                "#written in",
+                "#more than just one line"
+            ]},
+            {"para": "Or, not quite as intended, you can use a multiline string."},
+            {"para": "Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:"},
+            {"snippet": [
+                "python",
+                "'''",
+                "This is a comment",
+                "written in",
+                "more than just one line",
+                "'''"
+            ]},
+            {"para": "As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you have made a multiline comment."}
+        ]
+    }
+]

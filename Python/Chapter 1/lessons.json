@@ -3,7 +3,7 @@
         "type": "learn",
         "con": [
             {"title": "What is Python?"},
-            {"para": "Python is a popular programming language. ```const a``` It was created by Guido van Rossum, and released in 1991."},
+            {"para": "Python is a popular programming language. It was created by Guido van Rossum, and released in 1991."},
             {"para": "It is used for:"},
             {"list": [
                 "web development (server-side)",
