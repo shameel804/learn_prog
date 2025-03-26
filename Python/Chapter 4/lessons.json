@@ -55,7 +55,7 @@
                 "python",
                 "print(type(x))\nprint(type(y))\nprint(type(z))\nprint(type(a))"
             ]},
-            {"note": "You will learn more about data types and casting later in this tutorial."}
+            {"note": "You will learn more about *data types* and *casting* later in this tutorial."}
         ]
     },
     {
