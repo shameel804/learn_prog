@@ -1,0 +1,31 @@
+[
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Python Install"},
+            {"para": "Many PCs and Macs will have python already installed."},
+            {"para": "To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):"},
+            {"snippet": [
+                "bash",
+                "C:\\Users\\Your Name>python --version"
+            ]},
+            {"para": "To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:"},
+            {"snippet": [
+                "bash",
+                "$ python --version"
+            ]},
+            {"para": "If you find that you do not have python installed on your computer, then you can download it from the following website: https://www.python.org/downloads/"}
+        ]
+    },
+    {
+        "type": "learn",
+        "con": [
+            {"title": "Basic Syntax"},
+            {"para": "To print an output, in python we use the ```print()``` function"},
+            {"snippet": [
+                "python",
+                "print('Hello, World!')"
+            ]}
+        ]
+    }
+]
